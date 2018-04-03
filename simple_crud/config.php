@@ -4,7 +4,7 @@
 $databaseHost = 'localhost';
 $databaseName = 'test';
 $databaseUsername = 'root';
-$databasePassword = 'root';
+$databasePassword = 'root_mysql';
 
 
 // Create Connection
@@ -22,6 +22,7 @@ function check_connection($conn){
   if($conn->connect_error){
     return false;
   }
+
   return true;
   
 }
