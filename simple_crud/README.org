@@ -1,0 +1,6 @@
+- config.php -> db connect
+- database.sql -> db populate
+- index
+  - add link
+  - all data with edit and delete link
+
