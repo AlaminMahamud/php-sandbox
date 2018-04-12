@@ -1,0 +1,27 @@
+<?php
+
+include_once("EmailNotifier.php");
+include_once("FaxNotifier.php");
+include_once("SMSNotifier.php");
+
+
+/*
+  Let's create a MOCK Object user which we assume has a method named
+  getNotifier(). This method returns either "sms" or "fax" or "email"
+ */
+
+$user = new User();
+$notifier = $user->getNotifier();
+switch($notifier){
+ case "email":
+   $objNotifier = new EmailNotifier();
+   break;
+ case "sms":
+   $objNotifier = new SMSNotifier();
+   break;
+ case "fax":
+   $objNotifier = new FaxNotifier();
+   break;
+ }
+$objNotifier -> notify();
+?>
