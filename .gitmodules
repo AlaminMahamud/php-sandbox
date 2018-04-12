@@ -1,0 +1,6 @@
+[submodule "try/phploginsys"]
+	path = try/phploginsys
+	url = https://github.com/JoelLisenby/phploginsys.git
+[submodule "try/codeigniter-source"]
+	path = try/codeigniter-source
+	url = https://github.com/bcit-ci/CodeIgniter.git
